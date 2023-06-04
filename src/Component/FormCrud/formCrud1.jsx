@@ -58,62 +58,110 @@ const Form1 = () => {
             <Radio value="FacE"> Factura: E </Radio>
           </Radio.Group>
         </Form.Item>
-        <Form.Item label="Input">
+        <Form.Item label="Nombre">
           <Input />
         </Form.Item>
-        <Form.Item label="Select">
+        <Form.Item label="Seleccionar">
           <Select>
-            <Select.Option value="demo">Demo</Select.Option>
+            <Select.Option value="CUIT">CUIT</Select.Option>
           </Select>
-        </Form.Item>
-        <Form.Item label="TreeSelect">
+          </Form.Item>
+          <Form.Item label="Ingrese NRO.">
+          <Input />
+
+          </Form.Item>
+          
+        <Form.Item label="IVA">
           <TreeSelect
             treeData={[
               {
-                title: 'Light',
-                value: 'light',
+                title: 'Resp Inscripto',
+                value: 'Resp Inscripto',
+                
+              },
+              {
+                title: 'No Resp',
+                value: 'No Resp',
+                
+              },
+              {
+                title: 'Mono Socia',
+                value: 'Mono Socia',
+                
+              },
+              {
+                title: 'Exento',
+                value: 'Exento',
+                
+              },
+              {
+                title: 'Resp Mono',
+                value: 'Resp Mono',
+                
+              },
+              {
+                title: 'Consumidor Final',
+                value: 'Consumidor Final',
                 children: [
                   {
-                    title: 'Bamboo',
-                    value: 'bamboo',
+                    value: 'Valor',
+                    label: 'Valor',
+                    
                   },
-                ],
+                ]
+                
               },
+              
             ]}
           />
         </Form.Item>
-        <Form.Item label="Cascader">
+        <Form.Item label="Cond. de Venta">
           <Cascader
             options={[
               {
-                value: 'zhejiang',
-                label: 'Zhejiang',
+                value: 'Contado',
+                label: 'Contado',
+                
+                
+              },
+              {
+                value: 'Cuenta Corriente',
+                label: 'Cuenta Corriente',
+                
+                
+              },
+              {
+                value: 'Tarjeta',
+                label: 'Tarjeta',
+                
                 children: [
                   {
-                    value: 'hangzhou',
-                    label: 'Hangzhou',
+                    value: 'Naranja',
+                    label: 'Naranja',
+                    
                   },
-                ],
+                ]
               },
+              
             ]}
           />
         </Form.Item>
-        <Form.Item label="DatePicker">
+        <Form.Item label="Fecha">
           <DatePicker />
         </Form.Item>
         <Form.Item label="RangePicker">
           <RangePicker />
         </Form.Item>
-        <Form.Item label="InputNumber">
+        <Form.Item label="Cantidad">
           <InputNumber />
         </Form.Item>
-        <Form.Item label="TextArea">
+        <Form.Item label="Descripcion">
           <TextArea rows={4} />
         </Form.Item>
         <Form.Item label="Switch" valuePropName="checked">
           <Switch />
         </Form.Item>
-        <Form.Item label="Upload" valuePropName="fileList" getValueFromEvent={normFile}>
+        <Form.Item label="Subir" valuePropName="fileList" getValueFromEvent={normFile}>
           <Upload action="/upload.do" listType="picture-card">
             <div>
               <PlusOutlined />
@@ -127,7 +175,7 @@ const Form1 = () => {
             </div>
           </Upload>
         </Form.Item>
-        <Form.Item label="Button">
+        <Form.Item label="Seguinos">
           <Button>TwitterFollowCard</Button>
         </Form.Item>
       </Form>

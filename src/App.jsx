@@ -1,4 +1,4 @@
-//import { Menu } from 'antd';
+import  Menu1  from './Component/Menu/Menu';
 import './App.css';
 import MsgAlert from './Component/Mensajes/MensajesAlert';
 
@@ -9,7 +9,7 @@ function App() {
   
     return (
       <div className="App">
-       <MsgAlert></MsgAlert> 
+       <Menu1></Menu1> 
       </div>
     );
 }

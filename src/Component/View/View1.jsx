@@ -11,12 +11,12 @@ const View1 = () => {
   return (
     <>
       <Button type="primary" onClick={showDrawer}>
-        Open
+        Vista
       </Button>
-      <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+      <Drawer title="Detalles de Factura" placement="right" onClose={onClose} open={open}>
+        <img src="./Imgview.jpg" alt="Foto de los ladrones" />
+        <br />
+        <p>Detalles a ver</p>
       </Drawer>
     </>
   );

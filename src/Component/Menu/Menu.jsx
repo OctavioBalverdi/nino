@@ -3,6 +3,7 @@ import { AutoComplete, Breadcrumb, Layout, Menu, theme } from 'antd';
 import { useState } from 'react';
 import Form1 from '../FormCrud/formCrud1';
 import Login1 from '../Login/Login1';
+import List1 from '../list/list';
 
 //import Form2 from '../formCrud/formCrud2';
 
@@ -61,8 +62,8 @@ const Menu1 = () => {
               margin: '16px 0',
             }}
           >
-            <Breadcrumb.Item>User</Breadcrumb.Item>
-            <Breadcrumb.Item>Bill</Breadcrumb.Item>
+            <Breadcrumb.Item>Gibson Store</Breadcrumb.Item>
+            <Breadcrumb.Item>Electric Guitar</Breadcrumb.Item>
           </Breadcrumb>
           <div
             style={{
@@ -71,7 +72,7 @@ const Menu1 = () => {
               background: colorBgContainer,
             }}
           >
-            <Form1/>
+            <List1></List1>
           </div>
         </Content>
         <Footer
