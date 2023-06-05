@@ -3,16 +3,16 @@ import { Button, Space } from 'antd';
 import View1 from '../View/View1';
 const data = [
   {
-    title: 'Ant Design Title 1',
+    title: 'Ceras Liquidas',
   },
   {
-    title: 'Ant Design Title 2',
+    title: 'Selladores',
   },
   {
-    title: 'Ant Design Title 3',
+    title: 'Minis',
   },
   {
-    title: 'Ant Design Title 4',
+    title: '250',
   },
 ];
 const List1 = () => (
@@ -22,9 +22,9 @@ const List1 = () => (
     renderItem={(item, index) => (
       <List.Item>
         <List.Item.Meta
-          avatar={<Avatar src={`https://xsgames.co/randomusers/avatar.php?g=pixel&key=${index}`} />}
+          avatar={<Avatar src={`${index}`} />}
           title={<a href="https://ant.design">{item.title}</a>}
-          description="Ant Design, a design language for background applications, is refined by Ant UED Team"
+          description="Productos de Exelencia"
         />
         <Space wrap>
         <View1></View1>

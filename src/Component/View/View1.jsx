@@ -14,9 +14,9 @@ const View1 = () => {
         Vista
       </Button>
       <Drawer title="Detalles de Factura" placement="right" onClose={onClose} open={open}>
-        <img src="./Imgview.jpg" alt="Foto de los ladrones" />
+      <img src="./Factura.jpg" alt="Factura"  />
         <br />
-        <p>Detalles a ver</p>
+        <p>Ver Detalles</p>
       </Drawer>
     </>
   );

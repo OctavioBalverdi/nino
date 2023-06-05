@@ -1,17 +1,15 @@
-import { FileOutlined, PieChartOutlined, UserOutlined ,TeamOutlined, DesktopOutlined} from '@ant-design/icons';
+import {  FileAddTwoTone ,CreditCardTwoTone, DollarTwoTone ,AppstoreTwoTone,BankTwoTone} from '@ant-design/icons';
 import { AutoComplete, Breadcrumb, Layout, Menu, theme } from 'antd';
 import { useState } from 'react';
 import Form1 from '../FormCrud/formCrud1';
-import Login1 from '../Login/Login1';
 import List1 from '../list/list';
 
-//import Form2 from '../formCrud/formCrud2';
 
 
 const { Header, Content, Footer, Sider } = Layout;
 
 
-function getItem(label, key, icon, children) {
+function getItem(label, key, icon, children,) {
   return {
     key,
     icon,
@@ -19,16 +17,25 @@ function getItem(label, key, icon, children) {
     label,
   };
 }
+
 const items = [
-  getItem('Productos', '1', <DesktopOutlined />, [
+    getItem('Productos', '1', <AppstoreTwoTone />, [
     getItem('Menzerna', '2'),
     getItem('Toxic shine', '3'),
     getItem('Full Car', '4'),
   ]),
-  getItem('Ventas', '5', <PieChartOutlined />),
-  getItem('User', 'sub1', <UserOutlined />),
-  getItem('Team', 'sub2', <TeamOutlined />, [getItem('Team 1', '6'), getItem('Team 2', '8')]),
-  getItem('Files', '9', <FileOutlined />),
+  getItem('Ventas', '5', <DollarTwoTone />),
+  getItem('Bancos', 'sub1', <BankTwoTone />, [
+   getItem('Banco Macro', '6'),
+   getItem('Banco Frances', '7'),
+   getItem('Banco Nacion', '8'),
+   getItem('Banco Santiago Del Estero', '9')]),
+  getItem('Tarjetas', 'sub2', <CreditCardTwoTone />,[
+    getItem('Visa', '10'),
+    getItem('MasterCard', '11'),
+    getItem('Naranja', '12'),
+    getItem('Maestro', '13')]),
+  getItem('Files', '14', <FileAddTwoTone />),
 ];
 const Menu1 = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -62,8 +69,8 @@ const Menu1 = () => {
               margin: '16px 0',
             }}
           >
-            <Breadcrumb.Item>Gibson Store</Breadcrumb.Item>
-            <Breadcrumb.Item>Electric Guitar</Breadcrumb.Item>
+            <Breadcrumb.Item>Toxic Shine</Breadcrumb.Item>
+            <Breadcrumb.Item>Productos</Breadcrumb.Item>
           </Breadcrumb>
           <div
             style={{
@@ -72,7 +79,7 @@ const Menu1 = () => {
               background: colorBgContainer,
             }}
           >
-            <List1></List1>
+            <List1/>
           </div>
         </Content>
         <Footer
@@ -80,10 +87,11 @@ const Menu1 = () => {
             textAlign: 'center',
           }}
         >
-          Octi ♥  Design ©2023 Created by Octis
+        
         </Footer>
       </Layout>
     </Layout>
   );
 };
+
 export default Menu1;
