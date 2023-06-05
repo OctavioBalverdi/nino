@@ -1,7 +1,7 @@
-import {  FileAddTwoTone ,CreditCardTwoTone, DollarTwoTone ,AppstoreTwoTone,BankTwoTone} from '@ant-design/icons';
+import {  FileAddTwoTone ,CreditCardTwoTone, DollarTwoTone ,AppstoreTwoTone,BankTwoTone,LoadingOutlined,DingtalkOutlined} from '@ant-design/icons';
 import { AutoComplete, Breadcrumb, Layout, Menu, theme } from 'antd';
 import { useState } from 'react';
-import Form1 from '../FormCrud/formCrud1';
+//import Form1 from '../FormCrud/formCrud1';
 import List1 from '../list/list';
 
 
@@ -20,16 +20,16 @@ function getItem(label, key, icon, children,) {
 
 const items = [
     getItem('Productos', '1', <AppstoreTwoTone />, [
-    getItem('Menzerna', '2'),
-    getItem('Toxic shine', '3'),
-    getItem('Full Car', '4'),
+    getItem('Menzerna', '2',<LoadingOutlined />),
+    getItem('Toxic shine', '3',<LoadingOutlined />),
+    getItem('Full Car', '4',<LoadingOutlined />),
   ]),
   getItem('Ventas', '5', <DollarTwoTone />),
   getItem('Bancos', 'sub1', <BankTwoTone />, [
-   getItem('Banco Macro', '6'),
-   getItem('Banco Frances', '7'),
-   getItem('Banco Nacion', '8'),
-   getItem('Banco Santiago Del Estero', '9')]),
+   getItem('Banco Macro', '6',<DingtalkOutlined />),
+   getItem('Banco Frances', '7',<DingtalkOutlined />),
+   getItem('Banco Nacion', '8',<DingtalkOutlined />),
+   getItem('Banco Santiago Del Estero', '9',<DingtalkOutlined />)]),
   getItem('Tarjetas', 'sub2', <CreditCardTwoTone />,[
     getItem('Visa', '10'),
     getItem('MasterCard', '11'),
@@ -87,7 +87,7 @@ const Menu1 = () => {
             textAlign: 'center',
           }}
         >
-        
+       
         </Footer>
       </Layout>
     </Layout>

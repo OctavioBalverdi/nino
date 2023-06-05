@@ -1,5 +1,6 @@
 import { Avatar, List } from 'antd';
 import { Button, Space } from 'antd';
+import {ShoppingCartOutlined, ShoppingOutlined}from '@ant-design/icons'
 import View1 from '../View/View1';
 const data = [
   {
@@ -14,6 +15,9 @@ const data = [
   {
     title: '250',
   },
+  {
+    title: '420',
+  },
 ];
 const List1 = () => (
   <List
@@ -22,7 +26,7 @@ const List1 = () => (
     renderItem={(item, index) => (
       <List.Item>
         <List.Item.Meta
-          avatar={<Avatar src={`${index}`} />}
+          avatar={<ShoppingCartOutlined />}
           title={<a href="https://ant.design">{item.title}</a>}
           description="Productos de Exelencia"
         />
